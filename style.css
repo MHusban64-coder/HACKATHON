@@ -1,0 +1,191 @@
+:root {
+  --primary-color: var(#1572d3);
+}
+@font-face {
+  font-family: poppins;
+  src: url(./fonts/Poppins.zip);
+}
+body nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+body nav ul {
+  list-style: none;
+  display: flex;
+}
+body nav ul li {
+  font-weight: bold;
+}
+.div-2ofnav a {
+  text-decoration: none;
+  color: black;
+}
+.div-1ofnav {
+  display: inherit;
+  justify-content: flex-start;
+}
+.div-2ofnav {
+  display: inherit;
+  justify-content: center;
+}
+.div-3ofnav {
+  justify-content: flex-end;
+}
+.logo img {
+  width: 35px;
+  height: 35px;
+}
+/* hero section */
+.maindivofherosection {
+  position: absolute;
+  top: 240px;
+  left: 100px;
+  width: 390px;
+  height: 238.62px;
+  /* border: 2px solid black; */
+  padding: 0%;
+}
+.firstdivofherosection {
+  font-size: 48px;
+  font-family: poppins;
+  font-weight: 600;
+  line-height: 8vh;
+}
+.highlitedtext {
+  color: #1572d3;
+}
+.seconddivofherosection {
+  font-size: 1vw;
+}
+.thirddivofherosection {
+  width: 12vw;
+  height: 4vh;
+  display: inline-block;
+}
+.fourthdivofherosection {
+  width: 12vw;
+  height: 4vh;
+  display: inline-block;
+}
+.maincoverimg {
+  width: 900px;
+  height: 450px;
+  position: absolute;
+  top: 0px;
+  left: 649px;
+  /* bottom: 300px; */
+  /* opacity: 87%; */
+}
+.bgimgofhero {
+  width: 800px;
+  height: 537px;
+  position: absolute;
+  top: -33px;
+  left: 866px;
+  opacity: 50%;
+}
+.b-input {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 850px;
+  left: 300px;
+  padding: 12px 12px 12px 32px;
+  gap: 50px;
+}
+
+/* ends  */
+/* how it works */
+.btnlike {
+  background-color: lightgrey;
+  color: #1572d3;
+  border-radius: 5px;
+  width: 8vw;
+}
+.main-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1180px;
+  gap: 300px;
+  left: 400px;
+}
+.main-cards .cards {
+  width: 10vw;
+  gap: 300px;
+}
+.logos-all {
+  width: 100vw;
+  height: 5vw;
+  position: absolute;
+  top: 1600px;
+}
+/* making why choose us */
+.choose-us-audi {
+  width: 65vw;
+  /* height: 359; */
+  position: absolute;
+  top: 2030px;
+  left: -181px;
+}
+.choose-us-audi img {
+  width: 100%;
+}
+.choose-us-text-main {
+  position: absolute;
+  top: 2000px;
+  left: 800px;
+}
+.choose-us-1 {
+  position: absolute;
+  top: 2150px;
+  left: 800px;
+}
+.choose-us-2 {
+  position: absolute;
+  top: 2300px;
+  left: 800px;
+}
+.choose-us-3 {
+  position: absolute;
+  top: 2450px;
+  left: 800px;
+}
+.choose-us-4 {
+  position: absolute;
+  top: 2600px;
+  left: 800px;
+}
+.mainofmaincard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  position: absolute;
+  top: 3000px;
+  left: 100px;
+  gap: 4vw;
+}
+.center1{
+    position: absolute;
+    top: 2800px;
+    left: 630px;
+}
+.center2{
+    position: absolute;
+    top: 2850px;
+    left: 400px;
+    font-size: 4vw;
+}
+.btnallcars{
+      position: absolute;
+    top: 3400px;
+    left: 630px;
+    /* font-size: 4vw; */
+}
+.btndown a{
+ text-decoration: none;
+ color: inherit;
+}
