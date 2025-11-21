@@ -4,7 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RENT CAR</title>
+      <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./IMAGES/Group.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link
       rel="stylesheet"
       href="path/to/font-awesome/css/font-awesome.min.css"
@@ -29,19 +51,25 @@
       <nav>
         <div class="div-1ofnav logo">
           <img src="./IMAGES/Group.svg" alt="logo" />
-          <p style="font-size: 2vw; display: inline-block">RENT CARS</p>
+          <p class="mainlogoheading">RENT CARS</p>
         </div>
         <div class="div-2ofnav">
-          <ul class="gap-5">
-            <a href="#"><li class="">Became A Renter</li></a>
-            <a href="#"><li class="">Rental Deals</li></a>
-            <a href="#"><li class="">How it works</li></a>
-            <a href="#"><li class="">Why choose us</li></a>
+          <ul class="gap">
+            <a href="#"><li class="none-on-smart">Became A Renter</li></a>
+            <a href="#"><li class="none-on-smart">Rental Deals</li></a>
+            <a href="#"><li class="none-on-smart" >How it works</li></a>
+            <a href="#"><li class="none-on-smart">Why choose us</li></a>
           </ul>
         </div>
-        <div class="div-3ofnav">
+        <div class="div-3ofnav none-on-smart">
           <button class="btn">Sign in</button>
           <button class="btn btn-primary">Sign up</button>
+        </div>
+        <div class="icons-on-smart">
+          <p><i class="fa-solid fa-car fa-2xl"></i></p>
+          <p><i class="fa-solid fa-tag fa-2xl"></i></p>
+          <p><i class="fa-solid fa-circle-question fa-2xl"></i></p>
+          <p><i class="fa-solid fa-star fa-2xl"></i></p>
         </div>
       </nav>
     </header>
@@ -60,11 +88,14 @@
           need it with your IOS and Android device.
         </p>
       </div>
-      <div class="thirddivofherosection">
+
+      <div class="mainofbuttons">
+        <div class="thirddivofherosection">
         <img src="./IMAGES/play (1).png" alt="playstoreimg" width="100%" />
       </div>
       <div class="fourthdivofherosection">
         <img src="./IMAGES/appstore.png" alt="playstoreimg" width="100%" />
+      </div>
       </div>
 
       <div class="maincoverimg">
@@ -97,30 +128,8 @@
     </div>
     <!-- ends -->
     <!-- steps for booking -->
-    <span
-      style="
-        font-size: 1vw;
-        font-family: poppins;
-        position: absolute;
-        top: 1080px;
-        font-weight: bold;
-        left: 620px;
-        background-color: aliceblue;
-        color: #1572d3;
-      "
-      >HOW IT WORKS</span
-    >
-    <span
-      style="
-        font-size: 3vw;
-        font-family: poppins;
-        position: absolute;
-        top: 1100px;
-        font-weight: bold;
-        left: 560px;
-      "
-      >How it works</span
-    >
+    <span class="howitworks">HOW IT WORKS</span>
+    <!-- <span class="mainofhow">How it works</span> -->
     <div class="main-cards gap-5">
       <div class="cards">
         <img src="./IMAGES/🦆 icon _car_.png" alt="..." />
@@ -147,7 +156,7 @@
         <img src="./IMAGES/audi.png" alt="audi" />
       </div>
       <div class="choose-us-text-main">
-        <button class="btn btn-outline-primary">WHY CHOOSE US</button>
+        <button class="btn btn-outline-primary btnwhy ">WHY CHOOSE US</button>
         <span style="font-size: 2.5vw; display: block"
           >We offer the best experience with our rental deals</span
         >
@@ -190,24 +199,26 @@
     </button>
     <span class="center2"> Most popular car rental deals </span>
     <!-- card 1 -->
-    <div class="mainofmaincard">
-      <div class="card" style="width: 18rem">
-        <img src="./IMAGES/car 1.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Jaguar XE L P250</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card’s content.
-          </p>
-          <a href="#" class="btn btn-outline-primary">RENT NOW -></a>
-        </div>
-      </div>
+     <div class="cardsall">
 
-      <!-- card 2 -->
-      <div class="card" style="width: 18rem">
-        <img src="./IMAGES/car 2.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">AUDI R8</h5>
+       <div class="mainofmaincard">
+         <div class="card" style="width: 18rem">
+           <img src="./IMAGES/car 1.png" class="card-img-top" alt="..." />
+           <div class="card-body">
+             <h5 class="card-title">Jaguar XE L P250</h5>
+             <p class="card-text">
+               Some quick example text to build on the card title and make up the
+               bulk of the card’s content.
+              </p>
+              <a href="#" class="btn btn-outline-primary">RENT NOW -></a>
+            </div>
+          </div>
+          
+          <!-- card 2 -->
+          <div class="card" style="width: 18rem">
+            <img src="./IMAGES/car 2.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">AUDI R8</h5>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card’s content.
@@ -243,28 +254,135 @@
     <!-- all vehicles button -->
     <button class="btn btn-outline-dark btnallcars">SHOW ALL VEHICLES</button>
     <!-- download -->
-     <div class="maindown">
+    <div class="maindown">
+      
+      <div class="download-main">
+        <button class="btn btn-outline-primary btndown none-on-smart">
+          <a
+          href="https://play.google.com/store/apps/details?id=bookingcar.bookingcar&hl=en"
+          >
+          download our app</a
+          >
+        </button>
+        <span class="down-main-text none-on-smart">Download Rentcars App <br>for <span style="color: #1572d3;">FREE</span></span>
+        <span class="down-sub-text none-on-smart">For faster, easier booking and exclusive deals.</span>
+      </div>
+      <div class="down-img">
+        <a href=""><img src="./IMAGES/play (1).png" alt="..." width="100%"></a>
+        <a href=""><img src="./IMAGES/appstore.png" alt="..." width="100%"></a>
+      </div>
+      <div class="downloadphoto"><img src="./IMAGES/639f61fd0b4e7a7f3ba8340e9a1a5d93ee8b2786.png" alt="..." width="100%"></div>
+      <div class="downloadphoto2"><img src="IMAGES/mobile photo.png" alt="..." width="100%"></div>
+    </div>
+  </div>
+    <!-- reviews -->
+ 
 
-         <div class="download-main">
-             <button class="btn btn-outline-primary btndown">
-                 <a
-                 href="https://play.google.com/store/apps/details?id=bookingcar.bookingcar&hl=en"
-                 >
-                 download our app</a
-                 >
-                </button>
-                <span class="down-main-text">Download Rentcars App <br>for <span style="color: #1572d3;">FREE</span></span>
-                <span class="down-sub-text">For faster, easier booking and exclusive deals.</span>
+    <!-- from a library but custom css applied
+      -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <script src="./index.js"></script>
+    <section class="main-section-of-reviews">
+      <div class="customer-feedback">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-sm-offset-2 col-sm-8">
+              <div>
+                <h2 class="section-title">What Clients Say</h2>
+              </div>
             </div>
-            <div class="down-img">
-                <a href=""><img src="./IMAGES/play (1).png" alt="..." width="100%"></a>
-                <a href=""><img src="./IMAGES/appstore.png" alt="..." width="100%"></a>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
+              <div class="owl-carousel feedback-slider">
+
+                <div class="feedback-slider-item">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZdlHVwqECdSnpSNQhoMEZ2njjK7qce9CI5w&s"
+                    class="center-block img-circle"
+                    alt="Customer Feedback"
+                  />
+                  <h3 class="customer-name">Lisa Redfern</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. It is a long established fact that a
+                    reader will be distracted by the readable its layout.
+                  </p>
+                  <span class="light-bg customer-rating" data-rating="5">
+                    5
+                    <i class="fa fa-star"></i>
+                  </span>
+                </div>
+                <div class="feedback-slider-item">
+                  <img
+                    src="https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?semt=ais_hybrid&w=740&q=80"
+                    class="center-block img-circle"
+                    alt="Customer Feedback"
+                  />
+                  <h3 class="customer-name">Cassi</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. It is a long established fact that a
+                    reader will be distracted by the readable its layout.
+                  </p>
+                  <span class="light-bg customer-rating" data-rating="4">
+                    4
+                    <i class="fa fa-star"></i>
+                  </span>
+                </div>
+                <div class="feedback-slider-item">
+                  <img
+                    src="https://img.freepik.com/premium-vector/avatar-profile-picture-icon-blue-background-flat-design-style-resources-graphic-element-design_991720-653.jpg?semt=ais_hybrid&w=740&q=80"
+                    class="center-block img-circle"
+                    alt="Customer Feedback"
+                  />
+                  <h3 class="customer-name">Md Nahidul</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. It is a long established fact that a
+                    reader will be distracted by the readable its layout.
+                  </p>
+                  <span class="light-bg customer-rating" data-rating="5">
+                    5
+                    <i class="fa fa-star"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="feedback-slider-thumb hidden-xs">
+                <div class="thumb-prev">
+                  <span>
+                    <img
+                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/451270/profile/profile-80.jpg"
+                      alt="Customer Feedback"
+                    />
+                  </span>
+                  <span class="light-bg customer-rating">
+                    5
+                    <i class="fa fa-star"></i>
+                  </span>
+                </div>
+
+                <div class="thumb-next">
+                  <span>
+                    <img
+                      src="https://i.postimg.cc/ydBjdm20/michael-dam-m-EZ3-Po-FGs-k-unsplash-1.jpg"
+                      alt="Customer Feedback"
+                    />
+                  </span>
+                  <span class="light-bg customer-rating">
+                    4
+                    <i class="fa fa-star"></i>
+                  </span>
+                </div>
+              </div>
             </div>
-            <div class="downloadphoto"><img src="./IMAGES/639f61fd0b4e7a7f3ba8340e9a1a5d93ee8b2786.png" alt="..." width="100%"></div>
-            <div class="downloadphoto2"><img src="IMAGES/mobile photo.png" alt="..." width="100%"></div>
+          </div>
         </div>
-        <!-- reviews -->
-         <img src="./IMAGES/Frame 992.png" alt="..." class="themostimp">
+      </div>
+    </section>
+    </div>
         <!-- footer -->
          
 <footer class="footer-container">
